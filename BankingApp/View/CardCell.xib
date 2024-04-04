@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="gTV-IL-0wX" customClass="CardCell" customModule="BankingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="201" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="201" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tll-BZ-Nb5">
+                        <rect key="frame" x="4" y="4" width="193" height="119"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="zTT-PO-XJm">
+                                <rect key="frame" x="8" y="8" width="140.33333333333334" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Card name]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gck-lz-8X6">
+                                        <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[1 AZN]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cda-lI-4FB">
+                                        <rect key="frame" x="0.0" y="37" width="30.333333333333332" height="9.6666666666666643"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[0000 0000 0000 0000]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BE-mq-QAg">
+                                        <rect key="frame" x="0.0" y="59.666666666666679" width="140.33333333333334" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="viza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6l-11-8B9">
+                                <rect key="frame" x="166.33333333333334" y="96.666666666666671" width="22.666666666666657" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-AJ-bOU">
+                                <rect key="frame" x="137" y="4" width="52" height="34.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="7Hy-HV-DCD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="g3S-cD-7Q2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h0N-AJ-bOU" secondAttribute="trailing" constant="4" id="5Ak-pS-CnV"/>
+                            <constraint firstItem="h0N-AJ-bOU" firstAttribute="top" secondItem="tll-BZ-Nb5" secondAttribute="top" constant="4" id="GSM-lw-IvT"/>
+                            <constraint firstItem="zTT-PO-XJm" firstAttribute="top" secondItem="tll-BZ-Nb5" secondAttribute="top" constant="8" id="RtW-RI-1wA"/>
+                            <constraint firstAttribute="trailing" secondItem="V6l-11-8B9" secondAttribute="trailing" constant="4" id="b2w-XC-TKu"/>
+                            <constraint firstAttribute="bottom" secondItem="V6l-11-8B9" secondAttribute="bottom" constant="8" id="n9Y-pN-SLy"/>
+                            <constraint firstItem="zTT-PO-XJm" firstAttribute="leading" secondItem="tll-BZ-Nb5" secondAttribute="leading" constant="8" id="rhj-lY-ywJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tll-BZ-Nb5" secondAttribute="bottom" constant="4" id="A5j-7j-M2V"/>
+                <constraint firstItem="tll-BZ-Nb5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="KAZ-Gc-JSZ"/>
+                <constraint firstItem="tll-BZ-Nb5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="Q60-pt-26w"/>
+                <constraint firstAttribute="trailing" secondItem="tll-BZ-Nb5" secondAttribute="trailing" constant="4" id="rFo-gZ-ctc"/>
+            </constraints>
+            <size key="customSize" width="201" height="127"/>
+            <connections>
+                <outlet property="amount" destination="Cda-lI-4FB" id="Jte-X4-HGK"/>
+                <outlet property="cardName" destination="Gck-lz-8X6" id="Xb7-w2-4ql"/>
+                <outlet property="cardNumber" destination="4BE-mq-QAg" id="Rd4-oN-IxB"/>
+                <outlet property="cardType" destination="V6l-11-8B9" id="j7G-BV-V4E"/>
+                <outlet property="cellView" destination="tll-BZ-Nb5" id="d0g-W6-KND"/>
+                <outlet property="favoriteButton" destination="h0N-AJ-bOU" id="kdI-6i-gz5"/>
+            </connections>
+            <point key="canvasLocation" x="79.433497536945822" y="45.600000000000001"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
